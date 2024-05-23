@@ -20,7 +20,7 @@ public class ScreenmatchApplication implements CommandLineRunner
 	{
 		ConsumoAPI consumoAPI = new ConsumoAPI();
 		String dados = consumoAPI
-				.obterDados("https://www.omdbapi.com/?t=gilmore+girls&apikey=90c4e57a");
+				.obterDados("https://www.omdbapi.com/?t=gilmore+girls&apikey=yourAPIKeyHere");
 
 		ConverteDados conversor = new ConverteDados();
 		DadosSerie dadosString =conversor.obterDados(dados, DadosSerie.class);
